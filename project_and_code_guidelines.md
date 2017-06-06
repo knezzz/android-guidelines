@@ -311,12 +311,11 @@ Example:
 
 ```java
 public class MainActivity extends Activity {
-
-	private String mTitle;
-    private TextView mTextViewTitle;
+    private String title;
+    private TextView textViewTitle;
 
     public void setTitle(String title) {
-    	mTitle = title;
+    	this.title = title;
     }
 
     @Override
@@ -331,7 +330,6 @@ public class MainActivity extends Activity {
     static class AnInnerClass {
 
     }
-
 }
 ```
 
@@ -340,7 +338,7 @@ If your class is extending an __Android component__ such as an Activity or a Fra
 ```java
 public class MainActivity extends Activity {
 
-	//Order matches Activity lifecycle
+    //Order matches Activity lifecycle
     @Override
     public void onCreate() {}
 
